@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Example media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  /* Add your mobile styles here */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  color: white;
+  background-color: black; /* Remove the original scrollbar */
+  /*overflow-y: hidden;*/
+}
+.container {
+  display: block;
+  height: fit-content;
+}
+
+.left {
+  display: block;
+  padding: 10px;
+  width: 20vw;
+  box-sizing: border-box;
+  height: fit-content;
+}
+/* Define custom scrollbar for the div with class "right" */
+.right {
+  width: 80vw;
+  margin-left: 200px;
+
+  scrollbar-width: auto; /* Width of the scrollbar */
+  scrollbar-color: #333333 #f0f0f0; /* Color of the scrollbar thumb and track */
+
+  /* Define style for the scrollbar thumb */
+  scrollbar-color: #333333 #f0f0f0; /* Color of the scrollbar thumb and track */
+}
+
+/* Define style for the scrollbar thumb */
+.right::-webkit-scrollbar-thumb {
+  background-color: #333333; /* Color of the scrollbar thumb */
+}
+
+/* Define style for the scrollbar track */
+.right::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Color of the scrollbar track */
+}
+
+/*
+.home {
+}*/
+.logo {
+  padding: 14px;
+}
+
+.home ul li {
+  display: flex;
+  gap: 15px;
+  width: 14px;
+  list-style: none;
+  padding-top: 14px;
+  font-weight: bold;
+  padding: 14px;
+}
+.home:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.create {
+  padding-bottom: 100px;
+}
+.p-1 {
+  padding: 10px;
+}
+.heading {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding-top: 14px;
+  padding: 23px 14px;
+  font-weight: bold;
+  align-items: center;
+  font-size: 12px;
+}
+
+.heading img {
+  width: 25px;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+.h {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 0;
+  margin-inline-end: auto;
+}
+.butt {
+  display: flex;
+  height: 40px;
+  justify-content: flex-start;
+  min-block-size: 40px;
+  padding: 4px 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  background-color: #121212;
+  color: white;
+  border: 0;
+}
+
+button.butt {
+  color: #61605f;
+}
+button.butt:hover {
+  color: white;
+}
+.butt2 {
+  display: flex;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  font-family: var(
+    --font-family,
+    CircularSp,
+    CircularSp-Arab,
+    CircularSp-Hebr,
+    CircularSp-Cyrl,
+    CircularSp-Grek,
+    CircularSp-Deva,
+    var(--fallback-fonts, sans-serif)
+  );
+  background-color: transparent;
+  border: 0px;
+  border-radius: 9999px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  touch-action: manipulation;
+  transition-duration: 33ms;
+  transition-property: background-color, border-color, color, box-shadow, filter,
+    transform;
+  user-select: none;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+  color: var(--text-subdued, #6a6a6a);
+  min-inline-size: 0px;
+  min-block-size: var(--encore-control-size-smaller, 32px);
+  padding-block-start: var(--encore-spacing-tighter-2, 8px);
+  padding-block-end: var(--encore-spacing-tighter-2, 8px);
+  padding-inline-start: var(--encore-spacing-tighter-2, 8px);
+  padding-inline-end: var(--encore-spacing-tighter-2, 8px);
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.plusicon {
+  display: flex;
+  color: #61605f;
+  justify-content: flex-end;
+}
+.plusicon:hover {
+  color: white;
+}
+.h2 {
+  text-size-adjust: 20px;
+}
+.lib:hover {
+  color: white;
+}
+
+.libicon {
+  display: flex;
+  margin-inline-end: 12px;
+}
+.section1 {
+  height: 1vh;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: grey;
+  gap: 13px;
+  position: absolute;
+  bottom: 0;
+  margin: 32px 0;
+  padding: 0 24px;
+  text-align: start;
+}
+.footer a {
+  color: grey;
+}
+.cookies:hover {
+  text-decoration: underline;
+}
+.right {
+  margin: 16px 0;
+}
+.library {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  position: relative;
+  justify-content: space-between;
+  gap: 8px;
+  border: 0;
+  padding: 8px 16px;
+  align-items: center;
+  margin: 0;
+  padding-left: 5px;
+}
+.plus {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  /* padding-top: 5px;
+  padding-left: 10px;*/
+}
+.plus:hover {
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: space-between; /* to make sure between arrow buttons and login and signup there is gap */
+  background-color: rgb(23, 23, 23);
+  height: 50px;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.search1 {
+  font-weight: bold;
+  display: none;
+  padding-left: 60px;
+}
+.logo1 {
+  display: none;
+}
+.fixed-top {
+  z-index: 1030;
+}
+.header > * {
+  /* header k andar waale elements k liye */
+  padding: 5px;
+}
+.hamburger {
+  display: none;
+}
+.hambutt {
+  border: 0;
+  padding-left: 10px;
+}
+.svg1 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.spotifyplaylists {
+  padding: 16px;
+  padding-top: 30px;
+}
+.spotify {
+  display: flex;
+  justify-content: space-between;
+}
+.spotify h4 {
+  color: #8f8a7e;
+}
+.h4:hover {
+  text-decoration: underline;
+}
+.cardContainer {
+  margin: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  max-height: 70vh;
+  flex-direction: row;
+  overflow-x: hidden;
+  width: 70vw;
+}
+
+.card {
+  width: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #121212;
+  font-size: 14px;
+  position: relative;
+}
+.cardContainer :hover {
+  background-color: #252525;
+}
+.spotifyplaylists h2 {
+  font-size: 17px;
+}
+.card > * {
+  padding-top: 10px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.play {
+  width: 28px;
+  height: 28px;
+  background-color: #1ed760;
+  border-radius: 50%;
+  border: 2px solid #1ed760;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 180px;
+  right: 17px;
+  opacity: 0;
+
+  transform: translateY(20px);
+  transition: opacity 0s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.card:hover .play {
+  opacity: 1;
+  transform: translateY(0);
+  background-color: #1ed760;
+}
+.play.active {
+  opacity: 1;
+  transform: translateY(0);
+  background-color: #1ed760;
+}
+.buttons > * {
+  margin: 0 12px;
+}
+.signupbtn {
+  background-color: rgb(23, 23, 23);
+  color: #8f8a7e;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  align-items: center;
+  position: relative;
+  vertical-align: middle;
+}
+.signupbtn:hover {
+  font-size: 17px;
+  color: white;
+  align-items: center;
+}
+.loginbtn {
+  background-color: white;
+  border-radius: 21px;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  width: 85px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 0;
+}
+.loginbtn:hover {
+  font-size: 17px;
+  transform: scale(1.05);
+}
+.section1 {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 8px;
+  gap: 20px;
+  margin: 8px 0;
+  padding: 1px 20px;
+  padding-bottom: 450px;
+  padding-left: 0;
+
+  vertical-align: baseline;
+}
+.new1 {
+  width: 100%;
+
+  display: block;
+  border: 2px solid black;
+  padding: 20px;
+
+  padding-right: 15px;
+  border-radius: 15px;
+  background-color: #242424;
+  border: 0;
+}
+.spansec {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.undersec {
+  display: flex;
+  flex-direction: column;
+}
+.spansec1 {
+  margin-top: 10px; /* Adjust this value to set the desired gap */
+  padding-bottom: 20px;
+}
+.Butt3 {
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 21px;
+  background-color: white;
+  border: 0;
+  padding: 12px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.Butt3:hover {
+  transform: scale(1);
+
+  font-size: 15px;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h1:hover {
+  text-decoration: underline;
+}
+.bottomright {
+  padding-top: 40px;
+}
+.bright {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding: 8px 16px 40px;
+  width: 99%;
+  display: block;
+  box-sizing: border-box;
+}
+.rightf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 32px;
+  -webkit-box-pack: justify;
+}
+.ff {
+  display: flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex: 1 1 50%;
+  padding-bottom: 0px;
+  min-width: 99px;
+}
+.first {
+  width: 20%;
+  margin-right: 24px;
+  margin-bottom: 32px;
+}
+.list1 {
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  list-style: none;
+  box-sizing: border-box;
+  padding-inline: 0px;
+  margin-block: 0px;
+  overflow-wrap: break-word;
+  -webkit-tap-highlight-color: transparent;
+  list-style-type: none;
+}
+.company {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.under {
+  margin: 8px 0px;
+  width: fit-content;
+}
+.under1 {
+  text-decoration: none;
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding-bottom: 5px;
+  color: #8f8a7e;
+}
+.under1:hover {
+  text-decoration: underline;
+  color: white;
+}
+.about {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-block-end: 8px;
+  color: inherit;
+}
+.logos {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.instagram {
+  display: inline;
+  padding: 16px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.instabutt {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+}
+
+.butt4 {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  cursor: inherit;
+}
+.butt4:hover {
+  background-color: #bab4b4;
+} /*
+.hr_parent {
+  display: block;
+  unicode-bidi: isolate;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  /*overflow: hidden;
+}*/
+/*
+hr {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: white;
+  /*border: 1px;
+  border-block-start: 1px solid var(--decorative-subdued, #dedede);
+  margin-block-end: var(--spacer-1, 24px);
+  --top-bar-opacity: 1;
+  border-color: rgba(255, 255, 255, 0.1);
+  margin-block-start: 0px;
+} 
+*/
+.hr1 {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin-block-start: 0px;
+}
+.hr_inner {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+}
+.footright {
+  display: flex;
+  flex-flow: column wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.foot_inner {
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: row;
+  -webkit-box-align: end;
+  align-items: end;
+  color: var(--text-subdued, #6a6a6a);
+}
+.copyright {
+  padding-right: 16px;
+  font-weight: bold;
+}
+.cr {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: inherit;
+}
+
+@media screen and (max-width: 1400px) {
+  .left {
+    position: absolute;
+    left: -100%;
+    transition: all.3s;
+    z-index: 1;
+    width: 233px;
+  }
+  .left {
+    height: fit-content;
+  }
+  .right {
+    width: 100vw;
+    margin: 0px;
+  }
+  .hr1 {
+    width: 95vw;
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .spotify {
+    padding-top: 40px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .search1 {
+    display: block;
+  }
+  .logo1 {
+    display: block;
+  }
+  .svg1 {
+    display: none;
+  }
+  .svg2 {
+    display: none;
+  }
+  .h4 {
+    display: none;
+  }
+  .ff {
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: end;
+  }
+  .rightf {
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: end;
+  }
+  .words {
+    display: none;
+  }
+  .bottomright {
+    padding-top: 0px;
+  }
+  .first {
+    width: 40%;
+  }
+  .cardContainer {
+    flex-direction: row;
+    flex-flow: row;
+    overflow-x: scroll;
+    scrollbar-color: #121212 #121212;
+    overflow-y: hidden;
+  }
+}
