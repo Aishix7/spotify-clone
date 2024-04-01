@@ -694,9 +694,10 @@ hr {
     overflow-y: hidden;
     margin: 20px;
     width: 100%;
+    margin-left: 5px;
   }
   .card img {
-    width: 99.8px;
+    width: 150px;
   }
 
   .play {
