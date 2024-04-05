@@ -244,7 +244,24 @@ button.butt:hover {
 .search1 {
   font-weight: bold;
   display: none;
-  padding-left: 60px;
+  padding-left: 100px;
+}
+.open1 {
+  padding-left: 10px;
+  padding-bottom: 3px;
+  display: none;
+}
+.open {
+  font-weight: bold;
+  border-radius: 21px;
+  background-color: white;
+  border: 0;
+  padding: 12px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: none;
 }
 .logo1 {
   display: none;
@@ -262,6 +279,7 @@ button.butt:hover {
 .hambutt {
   border: 0;
   padding-left: 10px;
+  display: none;
 }
 .svg1 {
   padding-right: 20px;
@@ -333,19 +351,21 @@ button.butt:hover {
   opacity: 0;
 
   transform: translateY(20px);
-  transition: opacity 0s ease-in-out, transform 0.8s ease-in-out;
+  transition: opacity 0s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .card:hover .play {
   opacity: 1;
   transform: translateY(0);
   background-color: #1ed760;
+  color: #1ed760;
 }
+/*
 .play.active {
   opacity: 1;
   transform: translateY(0);
   background-color: #1ed760;
-}
+}*/
 .buttons > * {
   margin: 0 12px;
 }
@@ -646,11 +666,19 @@ hr {
   .hamburger {
     display: block;
   }
-  .search1 {
+  .hambutt {
+    padding-left: 20px;
     display: block;
   }
+  .search1 {
+    display: flex;
+    align-items: center;
+    padding-left: 85%;
+    padding-right: 5%;
+  }
   .logo1 {
-    display: block;
+    display: flex;
+    align-items: center;
   }
   .svg1 {
     display: none;
@@ -705,5 +733,16 @@ hr {
   }
   .container {
     overflow-x: hidden;
+  }
+  .open1 {
+    display: flex;
+    align-items: center;
+  }
+  button.open {
+    display: block;
+    width: 90px;
+  }
+  .heading {
+    align-items: center;
   }
 }
